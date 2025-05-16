@@ -1,5 +1,5 @@
 @INVALID_USER_ID = 369b336b8c8867f2cc165159
-@GRAY_USER_ID = 6826af345cf21ab0f25e78ec
+@GRAY_USER_ID = 6826bfd906f45897dab37048
 
 ### NOTE: Replace the value of the variable GRAY_USER_ID with the value
 ###     of "_id" in the response to the following request, i.e., Request 1.

@@ -82,4 +82,30 @@ const updateUser = async (id, body) => {
   return query;
 };
 
-export { connect, createUser, getUsers, getUserbyID, updateUser };
+/**
+ * Delete all the users matching the specified query parameter
+ * @returns A promise.
+ */
+const deleteUsers = async (filter) => {
+  const query = await User.deleteMany(filter);
+  return query;
+};
+
+/**
+ * Delete one user by id
+ * @returns A promise.
+ */
+const deleteUser = async (id) => {
+  const query = await User.deleteOne({ _id: id });
+  return query;
+};
+
+export {
+  connect,
+  createUser,
+  getUsers,
+  getUserbyID,
+  updateUser,
+  deleteUsers,
+  deleteUser,
+};
